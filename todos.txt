@@ -1,0 +1,3 @@
+call diamond
+code for an hour
+welcome back
