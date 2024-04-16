@@ -11,7 +11,8 @@ todos = functions.get_todos()
 
 st.title("My Todo App")
 st.subheader("This are my Todos")
-st.write("This app to help track your activities")
+st.write("This app to help track your <b>activities.</b>",
+         unsafe_allow_html=True)
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo,key=todo)
