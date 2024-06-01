@@ -11,7 +11,8 @@ todos = functions.get_todos()
 
 st.title("My Todo App")
 st.subheader("This are my Todos")
-st.write("This app to help track your activities")
+st.write("This app to help track your <b>activities.</b>",
+         unsafe_allow_html=True)
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo,key=todo)
@@ -24,3 +25,4 @@ for index, todo in enumerate(todos):
 st.text_input(label=" ",placeholder="Add new todo....",
               on_change=add_todo, key="new_todo")
 
+print("ok")
